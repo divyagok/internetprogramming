@@ -7,7 +7,7 @@
 	<body>
 	<div>
 	<form action="" method="POST">
-	<input type="number" name="bookid"placeholder="bookid"><br><br>
+	<input type="text" name="bookname"placeholder="bookname"><br><br>
 	<input type="text" name="author"placeholder="author"><br><br>
 	<input type="submit" name="submit" value="submit"><br><br>
 	<button><a href="view.php">Display</a></button>
@@ -15,9 +15,9 @@
         </div>
         <?php
         if (isset($_POST['submit'])) {
-            $bookid=$_POST['bookid'];
+            $bookname=$_POST['bookname'];
             $author=$_POST['author'];
-            $query="INSERT INTO books (bookid,author) VALUES ('$bookid','$author')";
+            $query="INSERT INTO books (bookname,author) VALUES ('$bookname','$author')";
             $data=mysqli_query($con,$query);
          }
 if($data){
