@@ -1,4 +1,3 @@
-
 <?php include 'connection.php'; ?>
 <a href="index.php">Home</a>
 <table border="1px" cellpadding="10px" cellspacing="10px">

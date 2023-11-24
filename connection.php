@@ -1,0 +1,14 @@
+<?php
+$host="localhost";
+$user="root";
+$pass="";
+$db="LIBRARY1";
+$con=mysqli_connect($host,$user,$pass,$db);
+if($con){
+    echo"ok";
+}
+else
+{
+  echo"db not created";
+}
+?> 
